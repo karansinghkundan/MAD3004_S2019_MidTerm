@@ -21,7 +21,7 @@ class Internet : Bill
     }
     
     override func display() -> String {
-        return super.display() + "Provider Name : \(providerName)\n" + " Amount of Data Used : \(internetGbUsed)\n"
+        return super.display() + "Provider Name : \(providerName)\n" + " Amount of Data Used : \(internetGbUsed.broadbandUnit())\n"
     }
 }
 
