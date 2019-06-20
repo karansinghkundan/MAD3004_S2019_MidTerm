@@ -10,12 +10,18 @@ import Foundation
 
 class Internet : Bill
 {
-    var providerName : String
-    var internetGbUsed : String
+    var providerName:String
+    var internetGbUsed:Float
     
-    init(billId : Int ,billDate : Date, totalAmountDue : Float , providerName : String ,internetGbUsed : String)
+    init(billId : Int ,billDate : Date, totalAmountDue : Float , providerName : String ,internetGbUsed : Float , billType : BillType)
     {
-        self.providerName : String
-        self.internetGbUsed :String
+        self.providerName = providerName
+        self.internetGbUsed  = internetGbUsed
+        super.init(billID: billId, billDate : billDate, billType:billType)
+    }
+    
+    override func display() -> String {
+        return super.display() + "Provider Name : \(providerName)\n" + " Amount of Data Used : \(internetGbUsed)\n"
     }
 }
+

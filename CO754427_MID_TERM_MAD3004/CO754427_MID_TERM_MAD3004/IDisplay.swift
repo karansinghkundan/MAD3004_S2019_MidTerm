@@ -10,6 +10,6 @@ import Foundation
 
 protocol IDisplay
 {
-func printDetail()
+func datadisplay() -> String
 
 }

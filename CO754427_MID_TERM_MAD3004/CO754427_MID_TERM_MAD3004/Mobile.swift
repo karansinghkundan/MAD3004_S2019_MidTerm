@@ -7,4 +7,33 @@
 //
 
 import Foundation
-clas Mobile : Bill
+class Mobile : Bill
+{
+    var mobileManufacturerName:String
+    var mobilePlanName:String
+    var mobileNumber:String
+    var internetGBUsed:Float
+    var minutesUsed:Float
+    
+    init(billID:Int, billDate:Date, billType:BillType, totalAmount:Float , mobileManufacturerName:String, mobilePlanName:String, mobileNumber:String, internetGBUsed:Float, minutesUsed:Float )
+        {
+            
+            self.mobileManufacturerName = mobileManufacturerName
+            self.mobileNumber = mobileNumber
+            self.internetGBUsed = internetGBUsed
+            self.minutesUsed = minutesUsed
+            self.mobilePlanName = mobilePlanName
+            super.init(billID: billID, billDate: billDate, billType: billType)
+            self.totalAmount = totalAmount
+            
+        }
+        override func display() -> String {
+            return super.display() + "Manufacturer: \(mobileManufacturerName)\n" + "Plan Name: \(mobilePlanName)\n" + "Mobile Number: \(mobileNumber))" + "Internet Usage: \(internetGBUsed)\n" + "Minutes Usage: \(minutesUsed)\n"
+            
+        }
+
+    }
+
+    
+
+
