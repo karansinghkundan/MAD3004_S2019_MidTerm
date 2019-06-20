@@ -10,5 +10,12 @@ import Foundation
 
 class Internet : Bill
 {
+    var providerName : String
+    var internetGbUsed : String
     
+    init(billId : Int ,billDate : Date, totalAmountDue : Float , providerName : String ,internetGbUsed : String)
+    {
+        self.providerName : String
+        self.internetGbUsed :String
+    }
 }

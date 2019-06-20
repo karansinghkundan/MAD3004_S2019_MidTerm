@@ -7,16 +7,29 @@
 //
 
 import Foundation
-class Bill : IDisplay
+
+enum BillType
 {
-    var billId : Int?
-    var billDate : Date()
-    var billType : String
-    var totalBillAmount : Double
-    
-    init() {
-        <#statements#>
-    }
-    
+    case Mobile
+    case Internet
+    case Hydro
     
 }
+class Bill:IDisplay
+{
+    var billID:Int
+    var billDate:Date
+    var billType:BillType
+    var totalAmount:Float = 0
+    
+    init(billID:Int, billDate:Date, billType:BillType)
+    {
+        self.billID = billID
+        self.billType = billType
+        self.billDate = billDate
+    }
+    func display() -> String {
+        return "Bill ID: \(billID)\n" + "Bill Date: \(billDate)\n" + "Bill Type: \(billType)\n" + "Total Bill Amount:\(totalAmount)\n"
+    }
+}
+
