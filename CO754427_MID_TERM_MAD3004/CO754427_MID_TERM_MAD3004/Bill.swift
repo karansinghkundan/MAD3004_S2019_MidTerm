@@ -8,28 +8,37 @@
 
 import Foundation
 
-enum BillType
-{
-    case Mobile
-    case Internet
-    case Hydro
-    
-}
+
 class Bill:IDisplay
 {
     var billID:Int
     var billDate:Date
-    var billType:BillType
     var totalAmount:Float = 0
     
-    init(billID:Int, billDate:Date, billType:BillType)
+    init(billID:Int, billDate:Date)
     {
         self.billID = billID
-        self.billType = billType
         self.billDate = billDate
     }
     func display() -> String {
-        return "Bill ID: \(billID)\n" + "Bill Date: \(billDate)\n" + "Bill Type: \(billType)\n" + "Total Bill Amount:\(totalAmount)\n"
+        return "Bill ID: \(billID)\n" + "Bill Date: \(billDate)\n"  + "Total Bill Amount:\(totalAmount)\n"
+    }
+    func getBilltype() -> String
+    {
+        if self is Internet
+        {
+            return "Internet"
+        }
+        else if self is Mobile
+        {
+            return "Mobile"
+        }
+        else if self is Hydro
+        {
+            return "Hydro"
+        }
+        return "None"
     }
 }
+
 

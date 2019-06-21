@@ -16,6 +16,7 @@
 		9BB6B78622BC4F4100FC91AA /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B78522BC4F4100FC91AA /* Hydro.swift */; };
 		9BB6B78822BC51DD00FC91AA /* ExtentionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B78722BC51DD00FC91AA /* ExtentionData.swift */; };
 		9BB6B78A22BC527600FC91AA /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B78922BC527600FC91AA /* Customer.swift */; };
+		9BB6B78C22BC638300FC91AA /* ExtentionCus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B78B22BC638300FC91AA /* ExtentionCus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		9BB6B78522BC4F4100FC91AA /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9BB6B78722BC51DD00FC91AA /* ExtentionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionData.swift; sourceTree = "<group>"; };
 		9BB6B78922BC527600FC91AA /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BB6B78B22BC638300FC91AA /* ExtentionCus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionCus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				9BB6B78522BC4F4100FC91AA /* Hydro.swift */,
 				9BB6B78722BC51DD00FC91AA /* ExtentionData.swift */,
 				9BB6B78922BC527600FC91AA /* Customer.swift */,
+				9BB6B78B22BC638300FC91AA /* ExtentionCus.swift */,
 			);
 			path = CO754427_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				9BB6B78622BC4F4100FC91AA /* Hydro.swift in Sources */,
 				9BB6B77F22BC3E3900FC91AA /* Bill.swift in Sources */,
+				9BB6B78C22BC638300FC91AA /* ExtentionCus.swift in Sources */,
 				9BB6B78422BC3FB800FC91AA /* ExtensionDate.swift in Sources */,
 				9BB6B77D22BC3D9100FC91AA /* Internet.swift in Sources */,
 				9BB6B77422BC3C5B00FC91AA /* main.swift in Sources */,

@@ -49,7 +49,25 @@ import Foundation
             return total
         }
         
-      
+        init(customerid : Int,firstName : String, lastName : String,email : String,arraybills : [Bill])
+        {
+            self.customerId = customerid
+            self.firstName = firstName
+            self.lastName = lastName
+            self.emailId = email
+            self.arrayBills = arraybills
+        }
+        func display()
+        {
+            print("******** ##### Customer Details ##### ********")
+            print("Customer Id : \(self.customerId!)")
+            print("Customer Full Name : \(self.fullName)")
+            print("Email ID : \(self.emailId)")
+            
+        }
+}
+
+
         
         
 
