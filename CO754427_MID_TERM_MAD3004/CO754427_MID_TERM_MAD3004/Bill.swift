@@ -8,20 +8,26 @@
 
 import Foundation
 
-
-class Bill:IDisplay
+class Bill : IDisplay
 {
+    
+    
     var billID:Int
     var billDate:Date
+    
     var totalAmount:Float = 0
     
     init(billID:Int, billDate:Date)
     {
         self.billID = billID
+        
         self.billDate = billDate
     }
     func display() -> String {
-        return "Bill ID: \(billID)\n" + "Bill Date: \(billDate)\n"  + "Total Bill Amount:\(totalAmount)\n"
+        return "Bill ID: \(billID)\n" +
+            "Bill Date: \(billDate)\n" +
+            "Bill Type: \(getBilltype())\n" +
+        "Total Bill Amount: \(totalAmount)\n"
     }
     func getBilltype() -> String
     {
@@ -40,5 +46,3 @@ class Bill:IDisplay
         return "None"
     }
 }
-
-

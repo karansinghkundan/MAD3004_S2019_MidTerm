@@ -57,7 +57,7 @@ import Foundation
             self.emailId = email
             self.arrayBills = arraybills
         }
-        func display()
+        func Display()
         {
             print("******** ##### Customer Details ##### ********")
             print("Customer Id : \(self.customerId!)")
