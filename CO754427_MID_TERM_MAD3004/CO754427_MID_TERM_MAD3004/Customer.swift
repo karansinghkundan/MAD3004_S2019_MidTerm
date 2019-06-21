@@ -39,7 +39,17 @@ import Foundation
         
         
         var arrayBills : [Bill] = [Bill]()
-}
+        var totalBill : Float
+        {
+            var total : Float = 0
+            for bill in arrayBills
+            {
+                total = total + bill.totalAmount
+            }
+            return total
+        }
+        
+      
         
         
 
