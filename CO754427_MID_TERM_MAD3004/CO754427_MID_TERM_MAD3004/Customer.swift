@@ -44,7 +44,7 @@ import Foundation
             var total : Float = 0
             for bill in arrayBills
             {
-                total = total + bill.totalAmount
+                total = total + bill.totalAmount ??
             }
             return total
         }
