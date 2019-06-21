@@ -35,4 +35,13 @@ import Foundation
             return "\(self.firstName) \(self.lastName)"
         }
         
+        var emailId : String
         
+        
+        var arrayBills : [Bill] = [Bill]()
+}
+        
+        
+
+
+
