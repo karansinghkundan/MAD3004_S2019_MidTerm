@@ -7,4 +7,32 @@
 //
 
 import Foundation
-class Customer 
+
+    class Customer :IDisplay{
+        
+        
+        let customerId  : Int?
+        private var firstName : String
+        var getfirstName : String
+        {
+            get
+            {
+                return self.firstName
+            }
+        }
+        
+        private var lastName : String
+        var getlastName : String
+        {
+            get
+            {
+                return self.lastName
+            }
+        }
+        
+        var fullName : String
+        {
+            return "\(self.firstName) \(self.lastName)"
+        }
+        
+        
